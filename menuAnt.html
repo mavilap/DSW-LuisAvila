@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*primero en el móvil (mobile first)*/
+        nav {
+            padding: 1em;
+            font-family: font-family: Verdana, Geneva, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: #333;
+        }
+
+        nav li a {
+            color: white;
+            display: block;
+            text-decoration: none;
+            padding: .5em 1em;
+        }
+
+        nav li a:hover {
+            background: tomato;
+            color: white;
+        }
+
+        @media screen and (min-width: 480px) {
+            nav ul {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Index</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contáctanos</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
