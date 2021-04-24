@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="estilo.css"> -->
+    <style>
+        .menu {
+            display: flex;
+        }
+        nav ul {
+            list-style: none;
+            padding: 5px;
+            color: #fff;
+            background: black;
+        }
+        .menu li {
+            /*position: relative;*/
+            width: 100%;
+            text-align: center;
+        }
+
+        .menu a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background: #cb3529;
+            height: 25px;
+            text-decoration: none;
+        }
+
+        .dropdown li {
+            display: none;
+        }
+        .menu li:hover .dropdown li {
+            display: block;
+        }
+        .menu a:hover {
+            background: tomato;
+            color: #fff;
+
+        }
+
+        @media (max-width: 600px) {
+            .menu {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Servicios</a>
+                <ul class="dropdown">
+                    <li><a href="#">logo</a></li>
+                    <li><a href="#">web</a></li>
+                </ul>
+            </li>
+            <li> <a href="#">Portafolio</a>
+                <ul class="dropdown">
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">laravel</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="area">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, at ex iusto impedit doloremque soluta reprehenderit quod, praesentium harum mollitia nihil! Reiciendis, porro nihil harum iusto et mollitia tempora omnis.
+        </p>
+    </div>
+
+</body>
+
+</html>

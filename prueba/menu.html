@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <style>
+        /* Menu Dropdown! please use div */
+        .dropdown {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .dropdown>.dropdown-title {
+            /* put the height and width here! */
+        }
+
+        .dropdown>.dropdown-sub {
+            display: none;
+            z-index: 1;
+            flex-direction: column;
+            /* or row */
+        }
+
+        .dropdown:hover>.dropdown-sub {
+            display: flex;
+        }
+
+        .dropdown:hover>.dropdown-sub>.dropdown-option:hover {
+            background-color: #abcdef;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=" dropdown" style="background-color:#aaa;height: 20px;">
+        <div class="dropdown-title" style="background-color:#bbb; border:1px solid #000000;">Titulo</div>
+        <div class="dropdown-sub" style="background-color: #cccccc;">
+            <div class="dropdown-option">option 1</div>
+            <div class="dropdown-option">option 2</div>
+            <div class="dropdown-option">option 3</div>
+        </div>
+    </div>
+    <div>Random bottom item</div>
+</body>
+
+</html>

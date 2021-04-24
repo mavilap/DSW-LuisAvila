@@ -1,0 +1,29 @@
+header{
+    background-color:gray ;
+    padding: 20px;
+}
+nav{
+    background-color:darkslategrey;
+    color: white;
+    padding: 8px;
+    
+}
+.contenedor{
+    display:flex ;
+
+}
+
+section{
+    flex:75% ;
+    background-color:burlywood;
+    padding: 5px;
+}
+aside{
+    flex: 25%;
+    background-color:darkgrey;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}

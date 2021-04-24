@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Esta  sección de estilos se debe pasar al estilo CSS externo (enlazar con un archivo CSS) */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        header {
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+            background-image: url(img/cabecera.png);
+        }
+
+        .encabezado {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            
+
+        }
+
+        /* Style the top navigation bar */
+        nav {
+            color: blanchedalmond;
+            background-color: #333;
+        }
+
+        /* contenedor de columnas o principal */
+        .contenedor {
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+
+        /* crea dos columnas que se situan una al lado de la otra  */
+        /* Sidebar/left column */
+        aside {
+            flex: 25%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        /* Main column */
+        .main {
+            flex: 75%;
+            background-color: white;
+            padding: 20px;
+        }
+
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="encabezado">
+            <img src="img/imagen.jpg" alt="imagen de prueba" width="200" height="100">
+            <h1> Sitio web como herramienta de aprendizaje del tema <br> El Tema que seleccioné</h1>
+
+        </div>
+
+    </header>
+
+    <!-- Barra de navegación, la cual se debe  personalizar con un menú desplegable -->
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+            <li>temas
+                <ul>
+                    <li><a href="#">tema1</a></li>
+                    <li><a href="#">tema 2</a></li>
+                </ul>
+            </li>
+            <li>Recursos digitales
+                <ul>
+                    <li> <a href="#">Recurso 1</a> </li>
+                    <li>Recursos 2</li>
+                </ul>
+            </li>
+            <li>menu3</li>
+        </ul>
+    </nav>
+
+    <!-- The flexible grid (content) -->
+    <div class="contenedor">
+        <aside>
+            <h5> Caja lateral</h5>
+            <p>aqui puedo colocar lo de facebook</p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam molestias ducimus fuga rem, similique
+                tempore
+
+            </p>
+        </aside>
+
+        <section class="main">
+            <h1>Sitio web para el aprendizaje de los conceptos del Tema que seleccioné </h1>
+            <h4>Propósito:</h4>
+            <p>Este sitio tiene como proposito fomentar el aprendizaje de los <br>
+                conceptos correspondientes al tema que seleccioné como puede ser Listas y enlaces, flexbox,
+                CSS Grid, Interface Humano Computador, Posicionamiento Web, Frameworks CSS, Bootstrap etc</p>
+
+            <article>
+                <h3>Borrador del contenido:</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, <br>
+                    id totam eius doloremque ipsum nesciunt nemo rem aspernatur, <br>
+                    est inventore ullam neque. Asperiores voluptas deleniti commodi ex <br>
+                    nesciunt inventore enim.
+                <h6> Morales Rivera, H. N. (2014). Estudio comparativo entre tecnologías FLEX y HTMLS para el desarrollo
+                    de
+                    aplicaciones de internet enriquecidas (Bachelor's thesis). </h6>
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, harum.
+                </p>
+            </article>
+            <div style="text-align: center;">
+                <img src="img/imagen.jpg" alt="imagen de prueba" width="200" height="100">
+            </div>
+
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h6>Este es mi pie de pagina, el cual debo personalizar</h6>
+    </footer>
+
+</body>
+
+</html>

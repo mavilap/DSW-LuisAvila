@@ -1,0 +1,30 @@
+header{
+    background-color:gray ;
+    padding: 20px;
+}
+nav{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    
+}
+section{
+    float: left;
+    width:70% ;
+    background-color: coral;
+}
+aside{
+    float: left;
+    width: 30%;
+    background-color: blue;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.contenedor::after{
+    content: "";
+    display: block;
+    clear: both;
+}

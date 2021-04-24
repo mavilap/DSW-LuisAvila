@@ -1,0 +1,45 @@
+*{
+box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+}
+nav{
+    background-color: indigo;
+}
+.contenedor{
+    background-color:peru;
+
+}
+.lateral1{
+    float: left;
+    width: 30%;
+    background-color: teal;
+
+}
+.central{
+    float: left;
+    width: 40%;
+    background-color: tomato;
+
+}
+.lateral2{
+    float: left;
+    max-width: 30%;
+    background-color: yellow;
+
+}
+.contenedor::after{
+    content: "";
+    display:block;
+    clear: both;
+}
+footer{
+    background-color: black;
+    color: white;
+}

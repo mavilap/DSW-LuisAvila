@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            /* Enable flex mode. */
+            display: flex;
+
+            /* Spread out the elements inside the header. */
+            justify-content: space-between;
+
+            /* Align items vertically in the center. */
+            align-items: center;
+        }
+        @media (max-width: 1000px){
+        header{
+                /* Reverse the axis of the header, making it vertical. */
+                flex-direction: column;
+                
+                /* Align items to the begining (the left) of the header. */
+                align-items: flex-start;
+        }
+}
+    </style>
+</head>
+
+<body>
+    <header><br />&nbsp;&nbsp; &nbsp;
+        <div class="header-left">CoolLogo</div>
+        <br />&nbsp;&nbsp; &nbsp;
+        <div class="header-center"><br />&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<br />
+            <ul>
+                <ul>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+                    <li><a href="#">Our products</a></li>
+                </ul>
+            </ul>
+            <br />
+            <ul>
+                <ul>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </ul>
+            <br />
+            <ul>
+                <ul>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </ul>
+            <br />
+            <ul>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</ul>
+            <br />&nbsp;&nbsp; &nbsp;
+        </div>
+        <br />&nbsp;&nbsp; &nbsp;
+        <div class="header-right"><button>Buy now</button></div>
+    </header>
+</body>
+
+</html>
